@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centennial College - CE Course Evaluation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="https://www.centennialcollege.ca/">
+            <img src="College Banner.png" alt="Centennial College Logo">
+        </a>
+        <h1>Continuing Education Course Evaluation</h1>
+    </header>
+
+    <main class="container">
+        <form id="evaluationForm">
+            <fieldset class="course-info">
+                <legend>Course Information</legend>
+                <div class="course-details">
+                    <label for="courseName">Course Name/Code:</label>
+                    <input type="text" id="courseName" name="courseName" required>
+                </div>
+                <div class="semester">
+                    <label for="semester">Semester:</label>
+                    <select id="semester" name="semester" required>
+                        <option value="">Select Semester</option>
+                        <option value="fall">Fall</option>
+                        <option value="winter">Winter</option>
+                        <option value="spring/summer">Spring/Summer</option>
+                    </select>
+                </div>
+                <div class="course-year">
+                    <label for="courseYear">Year:</label>
+                    <input type="number" id="courseYear" name="courseYear" required>
+                </div>
+                <div class="instructor">
+                    <label for="instructorName">Instructor:</label>
+                    <input type="text" id="instructorName" name="instructorName" required>
+                </div>
+            </fieldset>
+
+            <fieldset class="instructor-evaluation">
+                <legend>Instructor Evaluation</legend>
+                <p>How would you rate the instructor's:</p>
+                <div class="evaluation-row">
+                    <label for="instructorKnowledge">Knowledge of subject?</label>
+                    <select id="instructorKnowledge" name="instructorKnowledge" required>
+                        <option value="">Select Rating</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="notSatisfactory">Not Satisfactory</option>
+                    </select>
+                </div>
+                <div class="evaluation-row">
+                    <label for="instructorHelpfulness">Helpfulness?</label>
+                    <select id="instructorHelpfulness" name="instructorHelpfulness" required>
+                        <option value="">Select Rating</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="notSatisfactory">Not Satisfactory</option>
+                    </select>
+                </div>
+                <div class="evaluation-row">
+                    <label for="instructorCourtesy">Courtesy and respect for all students?</label>
+                    <select id="instructorCourtesy" name="instructorCourtesy" required>
+                        <option value="">Select Rating</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="notSatisfactory">Not Satisfactory</option>
+                    </select>
+                </div>
+                <div class="evaluation-row">
+                    <label for="instructorCommunication">Communication skills?</label>
+                    <select id="instructorCommunication" name="instructorCommunication" required>
+                        <option value="">Select Rating</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="notSatisfactory">Not Satisfactory</option>
+                    </select>
+                </div>
+                <div class="evaluation-row">
+                    <label for="instructorOverall">Overall performance?</label>
+                    <select id="instructorOverall" name="instructorOverall" required>
+                        <option value="">Select Rating</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="notSatisfactory">Not Satisfactory</option>
+                    </select>
+                </div>
+                </fieldset>
+
+            <button type="submit">Submit Evaluation</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>Thank you! We pay attention to your feedback!  For more information on Continuing Education programs, please visit our website: <a href="https://www.centennialcollege.ca/continuing-education">Centennial College Continuing Education</a>.  You can also contact us by email: <a href="mailto:continuingeducation@centennialcollege.ca">continuingeducation@centennialcollege.ca</a></p>
+    </footer>
+</body>
+</html>
